@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  nft:
+    build:
+      context: .
+      dockerfile: NFTLogger.Dockerfile
+    environment:
+      - ADDRESS=0x95Ab5E9554CA6F8b6B0f65B13E39E76Bf4082851
+      - CLIENT=ziv
+      - MONGO_CONN=mongodb+srv://pattrn:pattrn1234@cluster0.ydhsz.mongodb.net/PortfolioTracking?retryWrites=true&w=majority

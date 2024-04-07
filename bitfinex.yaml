@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  bitfinex:
+    build:
+      context: .
+      dockerfile: BitfinexLogger.Dockerfile
+    environment:
+      - CLIENT=dolev
+      - MONGO_CONN=mongodb+srv://pattrn:pattrn1234@cluster0.ydhsz.mongodb.net/PortfolioTracking?retryWrites=true&w=majority
+      - KEY=O6cOJTPfVtwY3pvLwQgqDFxz29mVPPEph1vVgvQbBGb
+      - SECRET=nAr2SQADxfIVIYgMH2BswyLRvA6lYpWFVl0GQXiQ41M

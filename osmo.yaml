@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  osmo:
+    build:
+      context: .
+      dockerfile: OsmoLogger.Dockerfile
+    environment:
+      - ADDRESS=osmo1zf4eut8kwnz4zulfrnns26rg8k3888mdvc5qy4
+      - CLIENT=ziv
+      - MONGO_CONN=mongodb+srv://pattrn:pattrn1234@cluster0.ydhsz.mongodb.net/PortfolioTracking?retryWrites=true&w=majority
